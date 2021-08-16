@@ -1,4 +1,5 @@
-const api_FS = 'http://localhost:8877'
+const local = 'http://localhost:8877'
+const api_FS = 'https://api-find-sentences.herokuapp.com'
 
 const api = async (uri, options = {})=>{
     try { var res = await fetch(uri, options); return res.json()} 
